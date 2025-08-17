@@ -8,10 +8,16 @@ const LeftSidebar = () => {
       <h3>Tutorial Categories</h3>
       <nav>
         <ul>
-          <li><NavLink to="/tutorial/home/structural">Structural Analysis</NavLink></li>
-          <li><NavLink to="/tutorial/home/cfd">Fluid Dynamics (CFD)</NavLink></li>
-          <li><NavLink to="/tutorial/home/electromagnetics">Electromagnetics</NavLink></li>
-          <li><NavLink to="/tutorial/home/thermal">Thermal Analysis</NavLink></li>
+          <li><NavLink to="/tutorial/home/structural">Structural</NavLink></li>
+          <li><NavLink to="/tutorial/home/cfd">CFD</NavLink></li>
+          
+          <li><NavLink to="/tutorial/home/thermal">Thermal</NavLink></li>
+          <li><NavLink to="/tutorial/home/model">Model</NavLink></li>
+          <li><NavLink to="/tutorial/home/thermo-structural">Thermo-Structural</NavLink></li>
+          <li><NavLink to="/tutorial/home/coupled">Coupled</NavLink></li>
+          <li><NavLink to="/tutorial/home/fatigue">Fatigue</NavLink></li>
+          <li><NavLink to="/tutorial/home/transient">Transient</NavLink></li>
+          <li><NavLink to="/tutorial/home/parametric">Parametric</NavLink></li>
         </ul>
       </nav>
     </aside>

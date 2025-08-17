@@ -2,7 +2,7 @@
     width: 250px;
     flex-shrink: 0;
     background: #f8f9fa;
-    padding: 2rem;
+    padding: 1rem;
     border-left: 1px solid #e9ecef;
     position: fixed;
     top: 60px; /* Height of the header */
