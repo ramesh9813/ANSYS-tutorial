@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './page/Home';
 import Tutorial from './page/Tutorial';
@@ -9,7 +9,7 @@ import TutorialLayout from './components/tutorial/TutorialLayout';
 import TutorialHome from './page/TutorialHome';
 import TutorialCategoryPage from './page/tutorial/TutorialCategoryPage';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Layout />,
