@@ -1,0 +1,12 @@
+.tutorial-layout {
+    display: flex;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 80px; /* Add padding to account for fixed header */
+}
+
+.tutorial-main-content {
+    flex-grow: 1;
+    padding: 2rem;
+}

@@ -5,7 +5,9 @@ import Home from './page/Home';
 import Tutorial from './page/Tutorial';
 import Contact from './page/Contact';
 import ContactUp from './page/ContactUp';
-import { TutorialHome } from './components/tutorial/TutorialHome';
+import TutorialLayout from './components/tutorial/TutorialLayout';
+import TutorialHome from './page/TutorialHome';
+import TutorialCategoryPage from './page/tutorial/TutorialCategoryPage';
 
 const router = createBrowserRouter([
   {
@@ -18,11 +20,21 @@ const router = createBrowserRouter([
       },
       {
         path: '/tutorial',
-        element: <Tutorial />,
-      },
-      {
-        path: '/tutorial/home',
-        element: <TutorialHome />,
+        element: <TutorialLayout />,
+        children: [
+          {
+            path: '',
+            element: <Tutorial />,
+          },
+          {
+            path: 'home',
+            element: <TutorialHome />,
+          },
+          {
+            path: 'home/:category',
+            element: <TutorialCategoryPage />,
+          },
+        ],
       },
       {
         path: '/contact',

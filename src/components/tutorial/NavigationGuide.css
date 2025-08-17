@@ -1,0 +1,25 @@
+.navigation-guide h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.navigation-guide ul {
+    list-style: none;
+}
+
+.navigation-guide li {
+    margin-bottom: 0.5rem;
+}
+
+.navigation-guide a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navigation-guide a:hover {
+    background-color: #e9ecef;
+}
