@@ -4,6 +4,11 @@
     background: #f8f9fa;
     padding: 2rem;
     border-right: 1px solid #e9ecef;
+    position: fixed;
+    top: 60px; /* Height of the header */
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
 }
 
 .left-sidebar h3 {

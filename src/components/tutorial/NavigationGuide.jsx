@@ -1,19 +1,64 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import './NavigationGuide.css';
 
 const NavigationGuide = () => {
+  const { category } = useParams();
+
+  const tutorialSteps = {
+    structural: [
+      { id: 'step-1', title: 'Create New Project' },
+      { id: 'step-2', title: 'Define Material Properties' },
+      { id: 'step-3', title: 'Import or Create Geometry' },
+      { id: 'step-4', title: 'Generate Mesh' },
+      { id: 'step-5', title: 'Apply Boundary Conditions' },
+      { id: 'step-6', title: 'Solve and Review Results' },
+      { id: 'expected-results', title: 'Expected Results' },
+      { id: 'next-steps', title: 'Next Steps' },
+    ],
+    cfd: [
+      { id: 'step-1', title: 'Create New Project' },
+      { id: 'step-2', title: 'Define Fluid Properties' },
+      { id: 'step-3', title: 'Import or Create Geometry' },
+      { id: 'step-4', title: 'Generate Mesh' },
+      { id: 'step-5', title: 'Set up Physics and Boundary Conditions' },
+      { id: 'step-6', title: 'Solve and Review Results' },
+      { id: 'expected-results', title: 'Expected Results' },
+      { id: 'next-steps', title: 'Next Steps' },
+    ],
+    electromagnetics: [
+      { id: 'step-1', title: 'Create New Project' },
+      { id: 'step-2', title: 'Define Material Properties' },
+      { id: 'step-3', title: 'Create Geometry' },
+      { id: 'step-4', title: 'Assign Excitations and Boundary Conditions' },
+      { id: 'step-5', title: 'Analyze and Solve' },
+      { id: 'step-6', title: 'Review Results' },
+      { id: 'expected-results', title: 'Expected Results' },
+      { id: 'next-steps', title: 'Next Steps' },
+    ],
+    thermal: [
+      { id: 'step-1', title: 'Create New Project' },
+      { id: 'step-2', title: 'Define Material Properties' },
+      { id: 'step-3', title: 'Import or Create Geometry' },
+      { id: 'step-4', title: 'Generate Mesh' },
+      { id: 'step-5', title: 'Apply Boundary Conditions' },
+      { id: 'step-6', title: 'Solve and Review Results' },
+      { id: 'expected-results', title: 'Expected Results' },
+      { id: 'next-steps', title: 'Next Steps' },
+    ],
+  };
+
+  const currentSteps = tutorialSteps[category] || [];
+
   return (
     <div className="navigation-guide">
       <h3>Navigation Guide</h3>
       <ul>
-        <li><a href="#step-1">Step 1: Create New Project</a></li>
-        <li><a href="#step-2">Step 2: Define Material Properties</a></li>
-        <li><a href="#step-3">Step 3: Import or Create Geometry</a></li>
-        <li><a href="#step-4">Step 4: Generate Mesh</a></li>
-        <li><a href="#step-5">Step 5: Apply Boundary Conditions</a></li>
-        <li><a href="#step-6">Step 6: Solve and Review Results</a></li>
-        <li><a href="#expected-results">Expected Results</a></li>
-        <li><a href="#next-steps">Next Steps</a></li>
+        {currentSteps.map((step) => (
+          <li key={step.id}>
+            <a href={`#${step.id}`}>{step.title}</a>
+          </li>
+        ))}
       </ul>
     </div>
   );

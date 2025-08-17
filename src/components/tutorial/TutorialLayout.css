@@ -9,4 +9,6 @@
 .tutorial-main-content {
     flex-grow: 1;
     padding: 2rem;
+    padding-left: 270px; /* Width of left sidebar + some extra padding */
+    padding-right: 270px; /* Width of right sidebar + some extra padding */
 }

@@ -6,11 +6,11 @@ import NavigationGuide from './NavigationGuide';
 const RightSidebar = () => {
   const location = useLocation();
 
-  const isStructuralPage = location.pathname === '/tutorial/home/structural';
+  const isTutorialCategoryPage = location.pathname.startsWith('/tutorial/home/');
 
   return (
     <aside className="right-sidebar">
-      {isStructuralPage ? (
+      {isTutorialCategoryPage ? (
         <NavigationGuide />
       ) : (
         <>
