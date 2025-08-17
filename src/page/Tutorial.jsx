@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Tutorial.css';
 
 const Tutorial = () => {
@@ -10,32 +11,32 @@ const Tutorial = () => {
           <div className="category-card">
             <h3>Structural Analysis</h3>
             <ul>
-              <li><a href="structural-analysis.html">Static Structural Analysis</a></li>
-              <li>Modal Analysis</li>
-              <li>Thermal Stress Analysis</li>
-              <li>Nonlinear Analysis</li>
+              <li><Link to="/tutorial/home">Static Structural Analysis</Link></li>
+              <li><Link to="/tutorial/home">Modal Analysis</Link></li>
+              <li><Link to="/tutorial/home">Thermal Stress Analysis</Link></li>
+              <li><Link to="/tutorial/home">Nonlinear Analysis</Link></li>
             </ul>
-            <a href="structural-analysis.html" className="btn">Browse Tutorials</a>
+            <Link to="/tutorial/home" className="btn">Browse Tutorials</Link>
           </div>
           <div className="category-card">
             <h3>Fluid Dynamics (CFD)</h3>
             <ul>
-              <li><a href="cfd-analysis.html">Internal Flow Analysis</a></li>
-              <li>External Aerodynamics</li>
-              <li>Heat Transfer in Fluids</li>
-              <li>Multiphase Flow</li>
+              <li><Link to="/tutorial/home">Internal Flow Analysis</Link></li>
+              <li><Link to="/tutorial/home">External Aerodynamics</Link></li>
+              <li><Link to="/tutorial/home">Heat Transfer in Fluids</Link></li>
+              <li><Link to="/tutorial/home">Multiphase Flow</Link></li>
             </ul>
-            <a href="cfd-analysis.html" className="btn">Browse Tutorials</a>
+            <Link to="/tutorial/home" className="btn">Browse Tutorials</Link>
           </div>
           <div className="category-card">
             <h3>Electromagnetics</h3>
             <ul>
-              <li><a href="electromagnetics-analysis.html">Electrostatic Analysis</a></li>
-              <li>Magnetostatic Analysis</li>
-              <li>Electromagnetic Heating</li>
-              <li>Antenna Design</li>
+              <li><Link to="/tutorial/home">Electrostatic Analysis</Link></li>
+              <li><Link to="/tutorial/home">Magnetostatic Analysis</Link></li>
+              <li><Link to="/tutorial/home">Electromagnetic Heating</Link></li>
+              <li><Link to="/tutorial/home">Antenna Design</Link></li>
             </ul>
-            <a href="electromagnetics-analysis.html" className="btn">Browse Tutorials</a>
+            <Link to="/tutorial/home" className="btn">Browse Tutorials</Link>
           </div>
         </div>
       </section>
@@ -47,19 +48,19 @@ const Tutorial = () => {
             <h3>Beam Bending Analysis</h3>
             <p>Learn how to analyze stress and deflection in a cantilever beam</p>
             <div className="difficulty">Beginner</div>
-            <a href="structural-analysis.html" className="btn">View Example</a>
+            <Link to="/tutorial/home" className="btn">View Example</Link>
           </div>
           <div className="example-card">
             <h3>Heat Exchanger CFD</h3>
             <p>Simulate heat transfer in a shell-and-tube heat exchanger</p>
             <div className="difficulty">Intermediate</div>
-            <a href="cfd-analysis.html" className="btn">View Example</a>
+            <Link to="/tutorial/home" className="btn">View Example</Link>
           </div>
           <div className="example-card">
             <h3>Electromagnetic Brake</h3>
             <p>Analyze electromagnetic forces in an eddy current brake system</p>
             <div className="difficulty">Advanced</div>
-            <a href="electromagnetics-analysis.html" className="btn">View Example</a>
+            <Link to="/tutorial/home" className="btn">View Example</Link>
           </div>
         </div>
       </section>

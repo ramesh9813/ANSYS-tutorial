@@ -1,16 +1,43 @@
-import { useState } from 'react'
-import Landingpage from './page/Landingpage'
+import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './page/Home';
+import Tutorial from './page/Tutorial';
+import Contact from './page/Contact';
+import ContactUp from './page/ContactUp';
+import { TutorialHome } from './components/tutorial/TutorialHome';
 
-function App() {
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: '/tutorial',
+        element: <Tutorial />,
+      },
+      {
+        path: '/tutorial/home',
+        element: <TutorialHome />,
+      },
+      {
+        path: '/contact',
+        element: <Contact />,
+      },
+      {
+        path: '/contact-us',
+        element: <ContactUp />,
+      },
+    ],
+  },
+]);
 
-  return (
-    <>
-      <div className="app-container">
-        <Landingpage />
-      </div>
+const App = () => {
+  return <RouterProvider router={router} />;
+};
 
-    </>
-  )
-}
-
-export default App
+export default App;
