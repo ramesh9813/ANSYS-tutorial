@@ -9,7 +9,7 @@ const Cfd = () => {
       <h1>Fluid Dynamics (CFD) Tutorial</h1>
       <p className="tutorial-intro">Learn how to perform Fluid Dynamics (CFD) simulations in ANSYS Workbench to analyze fluid flow, heat transfer, and other fluid-related phenomena.</p>
 
-      <div className="tutorial-grid">
+      <div className="tutorial-page-grid">
         <div className="tutorial-card">
           <h2>Model Creation</h2>
           <div className="step">

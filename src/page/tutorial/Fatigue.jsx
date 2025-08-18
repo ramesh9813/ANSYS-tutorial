@@ -9,7 +9,7 @@ const Fatigue = () => {
       <h1>Fatigue Analysis Tutorial</h1>
       <p className="tutorial-intro">Learn how to perform Fatigue Analysis in ANSYS Workbench to predict the life of components subjected to cyclic loading.</p>
 
-      <div className="tutorial-grid">
+      <div className="tutorial-page-grid">
         <div className="tutorial-card">
           <h2>Model Creation</h2>
           <div className="step">

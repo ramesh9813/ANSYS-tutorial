@@ -5,6 +5,13 @@
     font-family: 'Lato', sans-serif;
 }
 
+.tutorial-page-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
 .tutorial-card h2 {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 1.5rem;

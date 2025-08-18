@@ -9,7 +9,7 @@ const Parametric = () => {
       <h1>Parametric Analysis Tutorial</h1>
       <p className="tutorial-intro">Learn how to perform Parametric Analysis in ANSYS Workbench to study the effect of design variables on simulation results.</p>
 
-      <div className="tutorial-grid">
+      <div className="tutorial-page-grid">
         <div className="tutorial-card">
           <h2>Model Creation & Parameter Definition</h2>
           <div className="step">

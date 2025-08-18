@@ -9,7 +9,7 @@ const Structural = () => {
       <h1>Static Structural Analysis Tutorial</h1>
       <p className="tutorial-intro">Learn how to perform static structural analysis in ANSYS Workbench to calculate stresses, strains, and deformations under static loading conditions.</p>
 
-      <div className="tutorial-grid">
+      <div className="tutorial-page-grid">
         <div className="tutorial-card">
           <h2>Model Creation</h2>
           <div className="step">

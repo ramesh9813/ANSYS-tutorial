@@ -9,7 +9,7 @@ const Model = () => {
       <h1>Model Analysis Tutorial</h1>
       <p className="tutorial-intro">Learn how to perform Model Analysis in ANSYS Workbench to determine the natural frequencies and mode shapes of a structure.</p>
 
-      <div className="tutorial-grid">
+      <div className="tutorial-page-grid">
         <div className="tutorial-card">
           <h2>Model Creation</h2>
           <div className="step">

@@ -9,7 +9,7 @@ const Transient = () => {
       <h1>Transient Analysis Tutorial</h1>
       <p className="tutorial-intro">Learn how to perform Transient Analysis in ANSYS Workbench to simulate time-dependent phenomena.</p>
 
-      <div className="tutorial-grid">
+      <div className="tutorial-page-grid">
         <div className="tutorial-card">
           <h2>Model Creation</h2>
           <div className="step">

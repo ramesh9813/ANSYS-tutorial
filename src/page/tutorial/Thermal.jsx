@@ -9,7 +9,7 @@ const Thermal = () => {
       <h1>Thermal Analysis Tutorial</h1>
       <p className="tutorial-intro">Learn how to perform Thermal Analysis simulations in ANSYS Workbench to predict temperature distributions, heat transfer rates, and thermal stresses.</p>
 
-      <div className="tutorial-grid">
+      <div className="tutorial-page-grid">
         <div className="tutorial-card">
           <h2>Model Creation</h2>
           <div className="step">

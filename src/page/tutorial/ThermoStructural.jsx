@@ -9,7 +9,7 @@ const ThermoStructural = () => {
       <h1>Thermo-Structural Analysis Tutorial</h1>
       <p className="tutorial-intro">Learn how to perform Thermo-Structural Analysis in ANSYS Workbench to analyze the effects of temperature changes on structural components.</p>
 
-      <div className="tutorial-grid">
+      <div className="tutorial-page-grid">
         <div className="tutorial-card">
           <h2>Model Creation</h2>
           <div className="step">

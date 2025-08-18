@@ -9,7 +9,7 @@ const Coupled = () => {
       <h1>Coupled Analysis Tutorial</h1>
       <p className="tutorial-intro">Learn how to perform Coupled Analysis in ANSYS Workbench to simulate phenomena where different physics interact with each other (e.g., fluid-structure interaction, thermal-electric coupling).</p>
 
-      <div className="tutorial-grid">
+      <div className="tutorial-page-grid">
         <div className="tutorial-card">
           <h2>Model Creation</h2>
           <div className="step">
