@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './NavigationGuide.css';
 import ScrollLink from './ScrollLink';
 
 const NavigationGuide = () => {
   const { category } = useParams();
+  const [activeStep, setActiveStep] = useState(null);
 
   const tutorialSteps = {
     structural: [
@@ -101,13 +102,23 @@ const NavigationGuide = () => {
 
   const currentSteps = tutorialSteps[category] || [];
 
+  const handleStepClick = (stepId) => {
+    setActiveStep(stepId);
+  };
+
   return (
     <div className="navigation-guide">
       <h3>Navigation Guide</h3>
       <ul>
         {currentSteps.map((step) => (
           <li key={step.id}>
-            <ScrollLink href={`#${step.id}`}>{step.title}</ScrollLink>
+            <ScrollLink
+              href={`#${step.id}`}
+              className={activeStep === step.id ? 'active' : ''}
+              onClick={() => handleStepClick(step.id)}
+            >
+              {step.title}
+            </ScrollLink>
           </li>
         ))}
       </ul>

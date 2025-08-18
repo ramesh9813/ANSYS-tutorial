@@ -1,8 +1,11 @@
 import React from 'react';
 
-const ScrollLink = ({ href, children }) => {
+const ScrollLink = ({ href, children, className, onClick }) => {
   const handleClick = (e) => {
     e.preventDefault();
+    if (onClick) {
+      onClick();
+    }
     const targetId = href.substring(1);
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
@@ -11,7 +14,7 @@ const ScrollLink = ({ href, children }) => {
   };
 
   return (
-    <a href={href} onClick={handleClick}>
+    <a href={href} onClick={handleClick} className={className}>
       {children}
     </a>
   );

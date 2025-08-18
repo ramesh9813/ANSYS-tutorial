@@ -23,7 +23,9 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-.navigation-guide a:hover {
-    background-color: #F4F7F9;
-    color: #4A90E2;
+.navigation-guide a:hover,
+.navigation-guide a.active {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    font-weight: bold;
 }
