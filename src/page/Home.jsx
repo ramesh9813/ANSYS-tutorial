@@ -74,7 +74,7 @@ const Home = () => {
           </div>
           <div className="tutorial-card">
             <p>"Finally, a resource that explains complex ANSYS concepts in an easy-to-understand way. Highly recommended!"</p>
-            <h4>- John Smith, R&D Engineer</h4>
+            <h4>- John Smith, R&amp;D Engineer</h4>
           </div>
           <div className="tutorial-card">
             <p>"The practical examples helped me apply ANSYS to my work immediately. A must-have for any simulation enthusiast."</p>
