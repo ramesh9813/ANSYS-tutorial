@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './NavigationGuide.css';
-import ScrollLink from './ScrollLink';
 
 const NavigationGuide = () => {
   const { category } = useParams();
@@ -107,7 +106,7 @@ const NavigationGuide = () => {
       <ul>
         {currentSteps.map((step) => (
           <li key={step.id}>
-            <ScrollLink href={`#${step.id}`}>{step.title}</ScrollLink>
+            <a href={`#${step.id}`}>{step.title}</a>
           </li>
         ))}
       </ul>

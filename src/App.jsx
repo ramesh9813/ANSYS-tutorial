@@ -1,5 +1,5 @@
 import React from 'react';
-import { createHashRouter, RouterProvider, useRouteError } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './page/Home';
 import Tutorial from './page/Tutorial';
@@ -9,17 +9,10 @@ import TutorialLayout from './components/tutorial/TutorialLayout';
 import TutorialHome from './page/TutorialHome';
 import TutorialCategoryPage from './page/tutorial/TutorialCategoryPage';
 
-const ErrorBoundary = () => {
-  const error = useRouteError();
-  console.error(error);
-  return <div>An unexpected error has occurred. Please try again later.</div>;
-};
-
 const router = createHashRouter([
   {
     path: '/',
     element: <Layout />,
-    errorElement: <ErrorBoundary />,
     children: [
       {
         path: '/',
