@@ -35,6 +35,11 @@ const Home = () => {
             <p>Create your first structural analysis simulation from scratch</p>
             <Link to="/tutorial" className="btn">Start Tutorial</Link>
           </div>
+          <div className="tutorial-card">
+            <h3>Detailed Report</h3>
+            <p>Download the comprehensive project report in DOCX format</p>
+            <a href="/report.docx" download className="btn">Download Report</a>
+          </div>
         </div>
       </section>
 
